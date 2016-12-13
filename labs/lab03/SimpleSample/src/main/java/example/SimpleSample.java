@@ -100,7 +100,7 @@ public class SimpleSample extends ChaincodeBase {
 			return "{\"Error\":\"Expecting integer value for amount \"}";
 		}		
 		//cobrar a taxa de nao sei
-		float taxa = 1;
+		int taxa = 1;
 		
 		valFrom = valFrom-taxa;
 		valTo = valTo-taxa;
