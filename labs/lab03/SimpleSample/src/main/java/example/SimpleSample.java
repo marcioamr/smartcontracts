@@ -99,6 +99,12 @@ public class SimpleSample extends ChaincodeBase {
 			e.printStackTrace();
 			return "{\"Error\":\"Expecting integer value for amount \"}";
 		}		
+		//cobrar a taxa de nao sei
+		float taxa = 1;
+		
+		valFrom = valFrom-taxa;
+		valTo = valTo-taxa;
+		
 		if(valA>valFrom)
 			return "{\"Error\":\"Insufficient asset holding value for requested transfer amount \"}";
 		valFrom = valFrom-valA;
